@@ -68,12 +68,14 @@ export default function MenuItemCard({ item }: Props) {
             </span>
           </div>
           {item.allergens && item.allergens.length > 0 && (
-            <p className="text-xs text-orange-600 mt-1">Contains: {item.allergens.join(", ")}</p>
+            <p className="text-xs text-orange-600 mt-1">
+              Allergens: {item.allergens.join(", ")}
+            </p>
           )}
           <button
             onClick={handleAdd}
             disabled={!item.isAvailable}
-            className={`mt-3 w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-medium transition ${
+            className={`mt-3 w-full py-2.5 rounded-xl font-medium flex items-center justify-center gap-2 transition ${
               added
                 ? "bg-green-600 text-white"
                 : item.isAvailable
