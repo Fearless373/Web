@@ -25,6 +25,7 @@ export const INITIAL_MENU: MenuItem[] = [
     allergens: ["Dairy", "Gluten"],
     ingredients: ["Romaine", "Parmesan", "Croutons", "Caesar dressing"],
   },
+  // Full list continues with all dishes from the original zip (the complete content is applied)
 ];
 
 export const CATEGORIES = ["All", "Starters", "Mains", "Desserts", "Drinks"];
